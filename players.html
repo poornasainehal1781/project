@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matches</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        h1 {
+            margin-top: 20px;
+        }
+
+        .teams-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            width: 80%;
+            max-width: 600px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .team-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            border-radius: 8px;
+            color: white;
+            text-decoration: none;
+            font-size: 1.5rem;
+            font-weight: bold;
+            transition: transform 0.3s;
+            gap: 30px;
+        }
+
+        .team-button img {
+            width: 50px;
+            height: 50px;
+            margin-right: 15px;
+            border-radius: 50%;
+        }
+
+        .team-button:hover {
+            transform: scale(1.05);
+        }
+
+        /* Team-specific styles */
+        .team1 {
+            background-color: #FECB00;
+            /* Change color for each team */
+        }
+
+        .team2 {
+            background-color: #004BA0;
+        }
+
+        .team3 {
+            background-color: #DA1A27;
+        }
+
+        .team4 {
+            background-color: #EA1A8E;
+        }
+
+        .team5 {
+            background-color: #F95B26;
+        }
+
+        .team6 {
+            background-color: #001C9A;
+        }
+
+        .team7 {
+            background-color: #1748A2;
+        }
+
+        .team8 {
+            background-color: #3A225D;
+        }
+
+        .team9 {
+            background-color: #1C1E2A;
+        }
+
+        .team10 {
+            background-color: #D71920;
+        }
+
+        /* Adjust button size for better visibility */
+        .team-button {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav id="desktop-view">
+            <img src="/images/ipl-logo.png" height="70px" width="70px" alt="srh-logo" id="srh-logo">
+            <ul id="desktop-ul">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="matches.html">Matches</a></li>
+                <li><a href="players.html">players</a></li>
+                <li><a href="mercandise.html">mercandise</a></li>
+            </ul>
+        </nav>
+        <!-- mobile view-->
+        <nav id="moblie-view">
+            <ul id="moblie-view-flex">
+                <li><img src="/images/srh-logo.gif" height="140px" width="140px" alt=""></li>
+                <li><img src="/images/menu_24dp_FILL0_wght400_GRAD0_opsz24.svg" height="100px" width="100px"
+                        onclick="toggleMenu()" alt="">
+                </li>
+            </ul>
+        </nav>
+        <nav id="nav">
+        </nav>
+    </header>
+    <br><br>
+    <div class="body">
+        <h1>Team Players</h1>
+        <div class="teams-container">
+            <a href="players-CSK.html" class="team-button team1">
+                <img src="images/teams-logo/CSK.png" alt="Team 1 Logo">
+                <span>CSK</span>
+            </a>
+            <a href="players-MI.html" class="team-button team2">
+                <img src="images/teams-logo/MI.png" alt="Team 2 Logo">
+                <span>MI</span>
+            </a>
+            <a href="players-RCB.html" class="team-button team3">
+                <img src="images/teams-logo/RCB.png" alt="Team 3 Logo">
+                <span>RCB</span>
+            </a>
+            <a href="players-RR.html" class="team-button team4">
+                <img src="images/teams-logo/RR.png" alt="Team 4 Logo">
+                <span>RR</span>
+            </a>
+            <a href="players-SRH.html" class="team-button team5">
+                <img src="images/teams-logo/SRH.png" alt="Team 4 Logo">
+                <span>SRH</span>
+            </a>
+            <a href="players-LSG.html" class="team-button team6">
+                <img src="images/teams-logo/LSG.png" alt="Team 4 Logo">
+                <span>LSG</span>
+            </a>
+            <a href="players-DC.html" class="team-button team7">
+                <img src="images/teams-logo/DC.png" alt="Team 4 Logo">
+                <span>DC</span>
+            </a>
+            <a href="#" class="team-button team8">
+                <img src="images/teams-logo/KKR.png" alt="Team 4 Logo">
+                <span>KKR</span>
+            </a>
+            <a href="#" class="team-button team9">
+                <img src="images/teams-logo/GT.png" alt="Team 4 Logo">
+                <span>GT</span>
+            </a>
+            <a href="#" class="team-button team10">
+                <img src="images/teams-logo/PK.png" alt="Team 4 Logo">
+                <span>GT</span>
+            </a>
+            <!-- Add more teams as needed -->
+        </div>
+    </div>
+</body>
+
+</html>

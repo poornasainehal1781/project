@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercandise-SRH</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .txt-price{
+            display: flex;
+            gap: 12px;
+            align-items: center;
+            text-align: center;
+        }
+        #gray{
+            color: gray;
+        }
+        #strike{
+            text-decoration: line-through;
+            color: gray;
+        }
+        #bold{
+            font-weight: bold;
+        }
+
+        #green-color{
+            color: green;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            gap:10px;
+            justify-content: center ;
+            height: 438.53px;
+            width: 262.8px;
+            text-align: center;
+        }
+        .flex{
+            display: flex;
+            flex-direction:row;
+            flex-wrap: wrap;
+            gap: 150px;
+            justify-content: center;
+        }
+        a img{
+            border:  5px solid orange;
+            border-radius: 15px;
+        }
+        .add-to-cart-button {
+            background-color: #ff6f61;
+            /* Nice shopping button color */
+            color: #fff;
+            border: none;
+            padding: 12px 24px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .add-to-cart-button:hover {
+            background-color: #ff4c3b;
+            /* Slightly darker on hover */
+        }
+
+        .add-to-cart-button:active {
+            transform: scale(0.98);
+            /* Slight click effect */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav id="desktop-view">
+            <img src="/images/ipl-logo.png" height="70px" width="70px" alt="srh-logo" id="srh-logo">
+            <ul id="desktop-ul">
+                <li><a href="index.html" >Home</a></li>
+                <li><a href="matches.html" >Matches</a></li>
+                <li><a href="players.html" >players</a></li>
+                <li><a href="mercandise.html" >mercandise</a></li>
+            </ul>
+        </nav>
+        <!-- mobile view-->
+        <nav id="moblie-view">
+            <ul id="moblie-view-flex">
+                <li><img src="/images/srh-logo.gif" height="140px" width="140px" alt=""></li>
+                <li><img src="/images/menu_24dp_FILL0_wght400_GRAD0_opsz24.svg" height="100px" width="100px"
+                        onclick="toggleMenu()" alt="">
+                </li>
+            </ul>
+        </nav>
+        <nav id="nav">
+        </nav>
+    </header>
+    <br><br><br><br><br><br><br>
+    <div class="flex">
+        <div class="container">
+            <a href=""><img
+                    src="/images/DC_merchandise/Men Black and Green Graphic Printed Half Sleeves Round Neck Polyestyer T-Shirt.png"
+                    alt=""height="326.93px" width="245.2px"></a>
+            <p id="gray" class="wrap-text">Men Black and Green Graphic Printed Half Sleeves Round Neck Polyestyer T-Shirt</p>
+            <div class="txt-price">
+                <p id="bold"> &#8377;389</p>
+                <p id="strike">&#8377;1,199</p>
+                <p>|</p>
+                <p id="green-color" id="bold">68%off</p>
+            </div>
+            <button class="add-to-cart-button">Add to Cart</button>
+        </div>
+        <div class="container">
+            <a href=""><img
+                    src="images/DC_merchandise/Men Black Printed Half Sleeves Round Neck Cotton T-Shirt.png"
+                    alt="" height="326.93px" width="245.2px"></a>
+            <p id="gray" class="wrap-text">Men Black Printed Half Sleeves Round Neck Cotton T-Shirt</p>
+            <div class="txt-price">
+                <p id="bold"> &#8377;269</p>
+                <p id="strike">&#8377;499</p>
+                <p>|</p>
+                <p id="green-color" id="bold">46%off</p>
+            </div>
+            <button class="add-to-cart-button">Add to Cart</button>
+        </div>
+        <div class="container">
+            <a href=""><img
+                    src="images/DC_merchandise/Men Blue and Red Colourblocked Half Sleeves Mandarin Collar Polyester T-Shirt.png"
+                    alt="" height="326.93px" width="245.2px"></a>
+            <p id="gray" class="wrap-text">Men Blue and Red Colourblocked Half Sleeves Mandarin Collar Polyester T-Shirt</p>
+            <div class="txt-price">
+                <p id="bold"> &#8377;409</p>
+                <p id="strike">&#8377;999</p>
+                <p>|</p>
+                <p id="green-color" id="bold">59%off</p>
+            </div>
+            <button class="add-to-cart-button">Add to Cart</button>
+        </div>
+        <div class="container">
+            <a href=""><img
+                    src="images/DC_merchandise/Men Navy Blue and White Colourblocked Mid-Rise Cotton Sports Shorts.png"
+                    alt="" height="326.93px" width="245.2px"></a>
+            <p id="gray" class="wrap-text">Men Navy Blue and White Colourblocked Mid-Rise Cotton Sports Shorts</p>
+            <div class="txt-price">
+                <p id="bold"> &#8377;499</p>
+                <p id="strike">&#8377;1,499</p>
+                <p>|</p>
+                <p id="green-color" id="bold">67%off</p>
+            </div>
+            <button class="add-to-cart-button">Add to Cart</button>
+        </div>
+        <div class="container">
+            <a href=""><img
+                    src="images/DC_merchandise/Men Official IPL-2024 Match Jersey - Customised.png"
+                    alt="" height="326.93px" width="245.2px"></a>
+            <p id="gray" class="wrap-text">Men Official IPL-2024 Match Jersey - Customised</p>
+            <div class="txt-price">
+                <p id="bold"> &#8377;389</p>
+                <p id="strike">&#8377;999</p>
+                <p>|</p>
+                <p id="green-color" id="bold">61%off</p>
+            </div>
+            <button class="add-to-cart-button">Add to Cart</button>
+        </div>
+        <div class="container">
+            <a href=""><img
+                    src="images/DC_merchandise/Men Official IPL-2024 Match Jersey.png"
+                    alt="" height="326.93px" width="245.2px"></a>
+            <p id="gray" class="wrap-text">Men Official IPL-2024 Match Jersey</p>
+            <div class="txt-price">
+                <p id="bold"> &#8377;589</p>
+                <p id="strike">&#8377;1,099</p>
+                <p>|</p>
+                <p id="green-color" id="bold">46%off</p>
+            </div>
+            <button class="add-to-cart-button">Add to Cart</button>
+        </div>
+        <div class="container">
+            <a href=""><img
+                    src="images/DC_merchandise/Men Red and Blue All Over Print Half Sleeves Polo Collar Polyester T-Shirt.png"
+                    alt="" height="326.93px" width="245.2px"></a>
+            <p id="gray" class="wrap-text">Men Red and Blue All Over Print Half Sleeves Polo Collar Polyester T-Shirt</p>
+            <div class="txt-price">
+                <p id="bold"> &#8377;239</p>
+                <p id="strike">&#8377;499</p>
+                <p>|</p>
+                <p id="green-color" id="bold">52%off</p>
+            </div>
+            <button class="add-to-cart-button">Add to Cart</button>
+        </div>
+        <div class="container">
+            <a href=""><img
+                    src="images/DC_merchandise/Men Red and Navy Blue Colourblocked Half Sleeves Polo Collar Cotton T-Shirt.png"
+                    alt="" height="326.93px" width="245.2px"></a>
+            <p id="gray" class="wrap-text">Men Red and Navy Blue Colourblocked Half Sleeves Polo Collar Cotton T-Shirt</p>
+            <div class="txt-price">
+                <p id="bold"> &#8377;199</p>
+                <p id="strike">&#8377;399</p>
+                <p>|</p>
+                <p id="green-color" id="bold">50%off</p>
+            </div>
+            <button class="add-to-cart-button">Add to Cart</button>
+        </div>
+        <div class="container">
+            <a href=""><img
+                    src="images/DC_merchandise/Men White and Red Graphic Printed Mid-Rise Cotton Sports Shorts.png"
+                    alt="" height="326.93px" width="245.2px"></a>
+            <p id="gray" class="wrap-text">Men White and Red Graphic Printed Mid-Rise Cotton Sports Shorts</p>
+            <div class="txt-price">
+                <p id="bold"> &#8377;449</p>
+                <p id="strike">&#8377;1,499</p>
+                <p>|</p>
+                <p id="green-color" id="bold">70%off</p>
+            </div>
+            <button class="add-to-cart-button">Add to Cart</button>
+        </div>
+        <div class="container">
+            <a href=""><img
+                    src="images/DC_merchandise/Men White Printed Half Sleeves Round Neck Cotton T-Shirts.png"
+                    alt="" height="326.93px" width="245.2px"></a>
+            <p id="gray" class="wrap-text">Men White Printed Half Sleeves Round Neck Cotton T-Shirts</p>
+            <div class="txt-price">
+                <p id="bold"> &#8377;479</p>
+                <p id="strike">&#8377;999</p>
+                <p>|</p>
+                <p id="green-color" id="bold">52%off</p>
+            </div>
+            <button class="add-to-cart-button">Add to Cart</button>
+        </div>
+        <div class="container">
+            <a href=""><img
+                    src="images/DC_merchandise/Men Yellow and White All Over Print Half Sleeves Polo Collar Cotton T-shirt.png"
+                    alt="" height="326.93px" width="245.2px"></a>
+            <p id="gray" class="wrap-text">Men Yellow and White All Over Print Half Sleeves Polo Collar Cotton T-shirt</p>
+            <div class="txt-price">
+                <p id="bold"> &#8377;479</p>
+                <p id="strike">&#8377;999</p>
+                <p>|</p>
+                <p id="green-color" id="bold">52%off</p>
+            </div>
+            <button class="add-to-cart-button">Add to Cart</button>
+        </div>
+        <div class="container">
+            <a href=""><img
+                    src="images/DC_merchandise/Men Blue Graphic Printed Half Sleeves Round Neck Cotton T-Shirt.png"
+                    alt="" height="326.93px" width="245.2px"></a>
+            <p id="gray" class="wrap-text">Men Blue Graphic Printed Half Sleeves Round Neck Cotton T-Shirt</p>
+            <div class="txt-price">
+                <p id="bold"> &#8377;479</p>
+                <p id="strike">&#8377;999</p>
+                <p>|</p>
+                <p id="green-color" id="bold">52%off</p>
+            </div>
+            <button class="add-to-cart-button">Add to Cart</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="wrapper-1">
+            <div class="quick-links">
+                <ul id="footer-links">
+                    <li><a href="index.html" >Home</a></li>
+                    <li><a href="matches.html" >Matches</a></li>
+                    <li><a href="players.html" >The Risers</a></li>
+                    <li><a href="news.html" >News</a></li>
+                </ul>
+            </div>
+            <div class="news-settler">
+                <p style="margin: 10px;">SUBSCRIBE TO OUR NEWSLETTER</p>
+                <input type="email" name="email" id="email" placeholder="Email Address" required>
+                <button id="matches-btn"><a href="players.html">Send</a></button>
+            </div>
+            <div class="follow">
+                <p style="margin: 10px;">FOLLOW US ON</p>
+                <ul id="flex-follow">
+                    <li><a href="https://www.facebook.com/sunrisershyderabad" ><img
+                                src="/images/facebook.png" alt="" height="20px" width="20px"></a></li>
+                    <li><a href="https://x.com/sunrisers"><img src="/images/twitter.png" alt="" height="20px"
+                                width="20px"></a></li>
+                    <li><a href="https://www.instagram.com/SunrisersHYD/"><img src="/images/instagram (1).png" alt=""
+                                height="20px" width="20px"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="logic.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
+
+</body>
+
+</html>
